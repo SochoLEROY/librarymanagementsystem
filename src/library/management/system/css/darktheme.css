@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 14, 2018, 10:33:37 AM
+    Author     : ASUS
+*/
+*{
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+}
+.root{
+    -fx-background-color: -fx-primary;
+}
+.button{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-text-fill: -fx-primarytext;
+
+}
+.tab{
+    -fx-background-color: -fx-primary;
+     -fx-pref-height: 50px;
+    -fx-pref-width: 392px;
+}
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+   
+}
+.menu-bar{
+    -fx-background-color: -fx-primary;
+}
+.menu:hover{
+    -fx-background-color: derive(-fx-primary,50%);
+}
+.menu:showing{
+     -fx-background-color: derive(-fx-primary,50%);
+}
+.menu-item:hover{
+     -fx-background-color: derive(-fx-primary,50%);
+}
+.menu-item:focused{
+     -fx-background-color: derive(-fx-primary,50%);
+}
+.context-menu{
+    -fx-background-color: derive(-fx-primary,20%);
+}
+.custom-button{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.text{
+    -fx-fill: -fx-secondary;
+}

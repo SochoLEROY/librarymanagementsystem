@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" stylesheets="@../css/darktheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.system.controller.NewBookController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="idField" focusColor="#ffff8d" labelFloat="true" promptText="BookID" style="-fx-text-fill: #b2b2b2;" unFocusColor="#b2b2b2" />
+            <JFXTextField fx:id="titleField" focusColor="#ffff8d" labelFloat="true" promptText="Book Title" style="-fx-text-fill: #b2b2b2;" unFocusColor="#b2b2b2" />
+            <JFXTextField fx:id="authorField" focusColor="#ffff8d" labelFloat="true" promptText="Author" style="-fx-text-fill: #b2b2b2;" unFocusColor="#b2b2b2" />
+            <JFXTextField fx:id="publisherField" focusColor="#ffff8d" labelFloat="true" promptText="Publisher" style="-fx-text-fill: #b2b2b2;" unFocusColor="#b2b2b2" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="200.0" prefHeight="100.0" prefWidth="380.0" spacing="25.0">
+         <children>
+            <JFXButton fx:id="saveBtn" onAction="#saveBook" prefHeight="60.0" prefWidth="160.0" styleClass="custom-button" text="Save" />
+            <JFXButton fx:id="CancelBtn" layoutX="10.0" layoutY="10.0" onAction="#closeWindow" prefHeight="60.0" prefWidth="160.0" styleClass="custom-button" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
